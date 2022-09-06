@@ -42,10 +42,22 @@ const findAllUsers = async () => {
         { id, displayName, email, image }));
 
     return mapAllData;
-  };
+};
+
+const findUserById = async ({ id }) => {
+    // const userPwd = dataValues.password;
+    try {
+        const userID = await User.findByPk(id);
+        delete userID.dataValues.password;
+        return userID;
+    } catch (err) {
+        return false;
+    }
+};       
 
 module.exports = { 
     login, 
     createUser,
     findAllUsers,
+    findUserById,
  };

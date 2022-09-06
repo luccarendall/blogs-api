@@ -12,4 +12,6 @@ userRoute.post('/user', validateUser, userController.createUser);
 
 userRoute.get('/user', jwtAuth, userController.findAllUsers);
 
+userRoute.get('/user/:id', jwtAuth, userController.findUserById);
+
 module.exports = userRoute;

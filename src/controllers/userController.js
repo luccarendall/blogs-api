@@ -23,8 +23,19 @@ const findAllUsers = async (_req, res) => {
     return res.status(200).json(data);
 };
 
+const findUserById = async (req, res) => {
+    const data = req.params;
+
+    const userID = await userService.findUserById(data);
+    if (userID === false) {
+        return res.status(404).json({ message: 'User does not exist' });
+    }
+    return res.status(200).json(userID);
+};
+
 module.exports = { 
     login, 
     createUser,
     findAllUsers,
+    findUserById,
  };
