@@ -1,4 +1,3 @@
-// Crie o modelo ‘User’ em ‘src/database/models/user.js’ com as propriedades corretas
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
