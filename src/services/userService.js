@@ -17,4 +17,25 @@ const login = async ({ email, password }) => {
     return token;
 };
 
-module.exports = { login };
+const createUser = async ({ displayName, email, password, image }) => {
+    const userData = await User.findOne(
+        { where: { 
+            email,
+         }, 
+    },
+        );
+    if (userData === null || userData === '') {
+     const createdUser = await User.create(
+        { displayName, email, password, image },
+        );
+     
+     const token = createToken(createdUser.dataValues.id);
+       return token;
+    } 
+        return false;
+};
+
+module.exports = { 
+    login, 
+    createUser,
+ };
