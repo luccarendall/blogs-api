@@ -1,4 +1,4 @@
- const { Category } = require('../database/models');
+const { Category } = require('../database/models');
 
 const createCategory = async ({ name }) => {
     if (name === undefined) {
