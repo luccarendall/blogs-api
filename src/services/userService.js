@@ -35,7 +35,17 @@ const createUser = async ({ displayName, email, password, image }) => {
         return false;
 };
 
+const findAllUsers = async () => {
+    const data = await User.findAll(); 
+    // console.log(data);
+    const mapAllData = data.map(({ id, displayName, email, image }) => (
+        { id, displayName, email, image }));
+
+    return mapAllData;
+  };
+
 module.exports = { 
     login, 
     createUser,
+    findAllUsers,
  };

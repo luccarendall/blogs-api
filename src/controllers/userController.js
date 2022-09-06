@@ -18,7 +18,13 @@ const createUser = async (req, res) => {
    return res.status(201).json({ token: userData });
 };
 
+const findAllUsers = async (_req, res) => {
+    const data = await userService.findAllUsers();
+    return res.status(200).json(data);
+};
+
 module.exports = { 
     login, 
     createUser,
+    findAllUsers,
  };
