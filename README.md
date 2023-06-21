@@ -27,14 +27,17 @@ Este projeto é uma API RESTful para uma plataforma de blogs. Ele permite a cria
 
 - Node.js
 - Express.js
-- MongoDB
+- MySQL
+- Sequelize
+- Nodemon
+- Docker
 
 ## Pré-requisitos
 
 Antes de executar a aplicação, certifique-se de ter os seguintes pré-requisitos instalados:
 
-- Node.js (v12 ou superior)
-- MongoDB
+- Node.js
+- Docker
 
 ## Instalação
 
