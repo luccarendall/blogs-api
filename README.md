@@ -71,16 +71,16 @@ A aplicação agora está em execução e pode ser acessada através do seguinte
 
 A API possui os seguintes endpoints:
 
-GET /posts: Obter a lista de todos os posts de blog.
-GET /posts/:id: Obter detalhes de um post específico.
-POST /posts: Criar um novo post.
-PUT /posts/:id: Atualizar um post existente.
-DELETE /posts/:id: Excluir um post.
-POST /users/register: Registrar um novo usuário.
-POST /users/login: Autenticar um usuário.
-POST /posts/:id/comments: Adicionar um comentário a um post.
-GET /users/:id/posts: Obter todos os posts de um usuário específico.
-GET /search/posts: Pesquisar posts por título ou conteúdo.
+GET /posts: Obter a lista de todos os posts de blog.  
+GET /posts/:id: Obter detalhes de um post específico.  
+POST /posts: Criar um novo post.  
+PUT /posts/:id: Atualizar um post existente.  
+DELETE /posts/:id: Excluir um post.  
+POST /users/register: Registrar um novo usuário.  
+POST /users/login: Autenticar um usuário.  
+POST /posts/:id/comments: Adicionar um comentário a um post.  
+GET /users/:id/posts: Obter todos os posts de um usuário específico.  
+GET /search/posts: Pesquisar posts por título ou conteúdo.  
 
 Contribuições
 Contribuições são bem-vindas! Para contribuir com o projeto, siga as etapas abaixo:
