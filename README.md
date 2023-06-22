@@ -1,8 +1,8 @@
+<strong> Este projeto é uma API RESTful para uma plataforma de blogs. Ele permite a criação, leitura, atualização e exclusão de posts de blog. Além disso, oferece recursos para registro e autenticação de usuários, bem como a adição de comentários aos posts. <strong>
+
 <div align="center">
 <img src="https://i.ibb.co/gJN1st9/Lucca-Rendall.png" alt="Lucca-Rendall">  
 </div>
-
-Este projeto é uma API RESTful para uma plataforma de blogs. Ele permite a criação, leitura, atualização e exclusão de posts de blog. Além disso, oferece recursos para registro e autenticação de usuários, bem como a adição de comentários aos posts.
 
 ## Recursos
 
