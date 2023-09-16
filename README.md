@@ -1,29 +1,29 @@
-<strong> Este projeto é uma API RESTful para uma plataforma de blogs. Ele permite a criação, leitura, atualização e exclusão de posts de blog. Além disso, oferece recursos para registro e autenticação de usuários, bem como a adição de comentários aos posts. <strong>
+**This project is a RESTful API for a blogging platform. It allows for the creation, reading, updating, and deletion of blog posts. Additionally, it provides features for user registration and authentication, as well as adding comments to posts.**
 
 <div align="center">
 <img src="https://i.ibb.co/gJN1st9/Lucca-Rendall.png" alt="Lucca-Rendall">  
 </div>
 
-## Recursos
+## Features
 
-- Gerenciamento de posts de blog:
-  - Criar um novo post
-  - Ler detalhes de um post específico
-  - Atualizar um post existente
-  - Excluir um post
-- Registro e autenticação de usuários:
-  - Registrar um novo usuário
-  - Autenticar um usuário existente
-- Adicionar comentários aos posts de blog
-- Listagem de posts:
-  - Obter uma lista de todos os posts
-  - Filtrar posts por autor
-  - Ordenar posts por data
-- Pesquisa de posts:
-  - Pesquisar posts por título ou conteúdo
-- Tratamento de erros adequado e validação de dados
+- Blog post management:
+  - Create a new post
+  - Read details of a specific post
+  - Update an existing post
+  - Delete a post
+- User registration and authentication:
+  - Register a new user
+  - Authenticate an existing user
+- Add comments to blog posts
+- Post listing:
+  - Get a list of all posts
+  - Filter posts by author
+  - Sort posts by date
+- Post search:
+  - Search posts by title or content
+- Proper error handling and data validation
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - Node.js
 - Express.js
@@ -32,63 +32,79 @@
 - Nodemon
 - Docker
 
-## Pré-requisitos
+## Prerequisites
 
-Antes de executar a aplicação, certifique-se de ter os seguintes pré-requisitos instalados:
+Before running the application, make sure you have the following prerequisites installed:
 
 - Node.js
 - Docker
 
-## Instalação
+## Installation
 
-Siga as etapas abaixo para configurar e executar a aplicação:
+Follow the steps below to set up and run the application:
 
-1. Clone o repositório:
+1. Clone the repository:
 
 ```
 git clone https://github.com/luccarendall/blogs-api.git
 ```
-2. Navegue até o diretório do projeto:
+
+2. Navigate to the project directory:
+
 ```
 cd blogs-api
 ```
 
-3. Instale as dependências:
+3. Install dependencies:
+
 ```
 npm install
 ```
 
-4. Configure as variáveis de ambiente:
+4. Configure environment variables:
 
-- Renomeie o arquivo .env.example para .env.  
-- Edite o arquivo .env e defina os valores adequados para as variáveis de ambiente.
+- Rename the .env.example file to .env.
+- Edit the .env file and set appropriate values for the environment variables.
 
-5. Inicie o servidor:
+5. Start the server:
+
 ```
 npm start
 ```
-A aplicação agora está em execução e pode ser acessada através do seguinte endpoint: http://localhost:3000.
 
-A API possui os seguintes endpoints:
+The application is now running and can be accessed at the following endpoint: http://localhost:3000.
 
-GET /posts: Obter a lista de todos os posts de blog.  
-GET /posts/:id: Obter detalhes de um post específico.  
-POST /posts: Criar um novo post.  
-PUT /posts/:id: Atualizar um post existente.  
-DELETE /posts/:id: Excluir um post.  
-POST /users/register: Registrar um novo usuário.  
-POST /users/login: Autenticar um usuário.  
-POST /posts/:id/comments: Adicionar um comentário a um post.  
-GET /users/:id/posts: Obter todos os posts de um usuário específico.  
-GET /search/posts: Pesquisar posts por título ou conteúdo.  
+The API has the following endpoints:
 
-Contribuições
-Contribuições são bem-vindas! Para contribuir com o projeto, siga as etapas abaixo:
+GET /posts: Get a list of all blog posts.
+GET /posts/:id: Get details of a specific post.
+POST /posts: Create a new post.
+PUT /posts/:id: Update an existing post.
+DELETE /posts/:id: Delete a post.
+POST /users/register: Register a new user.
+POST /users/login: Authenticate a user.
+POST /posts/:id/comments: Add a comment to a post.
+GET /users/:id/posts: Get all posts from a specific user.
+GET /search/posts: Search posts by title or content.
 
-1. Faça um fork do repositório.
-2. Crie uma branch para a sua feature:
-```git checkout -b minha-feature```
-3. Faça as alterações necessárias e commit:
-```git commit -m "Minha contribuição"```
-4. Faça o push para o repositório remoto:
-```git push origin minha-feature```
+Contributions
+Contributions are welcome! To contribute to the project, follow the steps below:
+
+1. Fork the repository.
+2. Create a branch for your feature:
+
+```
+git checkout -b my-feature
+```
+
+3. Make necessary changes and commit:
+
+```
+git commit -m "My contribution"
+```
+
+4. Push to the remote repository:
+
+```
+git push origin my-feature
+```
